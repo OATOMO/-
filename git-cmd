@@ -34,4 +34,10 @@ git commit -a -m [message]
 
 8.
 #显示更变信息
+git status
+
+9.
+#显示当前分支的历史版本
+git --log
+git --log --oneline
 ------------------------------------------
