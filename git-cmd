@@ -48,9 +48,9 @@ git remote add [shortName] [url]
 
 11.
 #将本地仓库推到github网络上
-git push
+git push [remote] [branch]
 
 12.
 #将远程仓库的提交拉到本地仓库
-git pull
+git pull [remote] [branch]
 ------------------------------------------
