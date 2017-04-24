@@ -53,4 +53,7 @@ git push [remote] [branch]
 12.
 #将远程仓库的提交拉到本地仓库
 git pull [remote] [branch]
+
+#github闯关网站
+https://try.github.io/levels/1/challenges/1
 ------------------------------------------
