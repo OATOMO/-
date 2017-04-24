@@ -43,10 +43,14 @@ git --log
 git --log --oneline
 
 10.
+#将本地仓库和远程仓库建立远程关系
+git remote add [shortName] [url]
+
+11.
 #将本地仓库推到github网络上
 git push
 
-11.
-#
-git
+12.
+#将远程仓库的提交拉到本地仓库
+git pull
 ------------------------------------------
