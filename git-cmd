@@ -54,6 +54,11 @@ git push [remote] [branch]
 #将远程仓库的提交拉到本地仓库
 git pull [remote] [branch]
 
+#删除文件夹需要把本地缓存删了才能上传成功
+git rm -r --cached 'directory_name'
+git commit -m "Remove the now ignored directory some-directory"
+git push
+
 #github闯关网站
 https://try.github.io/levels/1/challenges/1
 ------------------------------------------
