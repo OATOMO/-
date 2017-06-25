@@ -1,10 +1,13 @@
 set ts=4  "tab4格
+set tabstop=4
+set softtabstop=4
+
 set nu    "顯示行號
 if has("syntax")
 syntax on  " 語法高亮
 endif 
 "set guifont=Courier10pitch\ 12
-set guifont=TlwgTypeWriter\ Bold\ Oblique\ 14
+set guifont=TlwgTypeWriter\ Bold\ Oblique\ 12
 "colorscheme ron " elflord ron peachpuff default 设置配色方案，vim自带的配色方案保存在/usr/share/vim/vim72/colors目录下
 
 "set mouse=a " Enable mouse usage (all modes) "使用鼠标
@@ -59,5 +62,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'Lokaltog/vim-powerline'
 filetype plugin indent on
 """""""""""""""""""""""""""""""""""
+let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
