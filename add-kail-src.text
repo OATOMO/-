@@ -1,0 +1,35 @@
+一、导入Kali-Linux源
+Ubuntu和Kali-Linux同样基于Debian，源可以共用。在Ubuntu的 /etc/apt/sources.list 文件中追加Kali-Linux的官方源：
+##########################################
+#deb http://http.kali.org/kali kali main non-free contrib
+#deb http://security.kali.org/kali-security kali/updates main contrib non-free
+#deb-src http://http.kali.org/kali kali main non-free contrib
+#deb-src http://security.kali.org/kali-security kali/updates main contrib non-free
+###########################################
+先不要急着apt-get update，因为还没导入Kali-Linux的官方公钥，更新会导致签名验证失败，继续进行下一步：
+
+二、导入公钥
+
+1.下载
+	# gpg --keyserver subkeys.pgp.net --recv-key 44C6513A8E4FB3D30875F758ED444FF07D8D0BF6
+
+2.导入
+
+	# gpg --export --armor 7D8D0BF6 | apt-key add -
+
+	其中7D8D0BF6是上面『下载』那一步里44C6513A8E4FB3D30875F758ED444FF07D8D0BF6的后8位
+
+3.更新
+	此时就可以在终端里输入apt-get update 来更新系统了。
+
+
+三、测试
+安装一个metasploit试试：
+	# apt-get install metasploit
+
+不出意外就会成功安装，然后看看metasploit有没有更新：
+	# msfupdate
+
+完成后就可以打开使用了：
+	# msfconsole
+
