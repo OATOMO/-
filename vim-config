@@ -1,1 +1,11 @@
 git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle 下载vim插件管理器
+
+# 下载 （在 `～/.vim/bundle` 目录下）
+git clone --recursive [https://github.com/Valloric/YouCompleteMe.git](https://github.com/Valloric/YouCompleteMe.git)
+# 检查完整性（在 `～/.vim/bundle/YouCompleteMe` 目录下）
+git submodule update --init --recursive
+
+
+sudo apt-get install llvm-3.9 clang-3.9 libclang-3.9-dev libboost-all-dev
+
+
